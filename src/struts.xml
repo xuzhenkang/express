@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="login" namespace="" extends="struts-default">
+		<action name="login" class="www.express.action.login.UsersLoginAction">
+			<result name="noThisUser">/index.jsp</result>
+			<result name="adminLoginSuccess">/WEB-INF/admin.jsp</result>
+			<result name="adminLoginFailure">/adminLoginFailure.jsp</result>
+			<result name="studentLoginSuccess">/WEB-INF/student.jsp</result>
+			<result name="studentLoginFailure">/studentLoginFailure.jsp</result>
+		</action>
+	</package>
+</struts>    
